@@ -1,11 +1,11 @@
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import Form1 from './components//Form1';
 import { useState } from 'react';
 import Alert1 from './components/Alert1';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './components/Home';
+// import { BrowserRouter, Route, Routes } from 'react-router-dom';
+// import Home from './components/Home';
 
 
 function App() {
@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Navbar title="Blog" aboutUs="About Blog" mode={mode} changeMode={changeMode} />
         <Alert1 alertMsg={alert} />
         <Routes>
@@ -49,7 +49,14 @@ function App() {
           <Route exact path="/form1" element={<Form1 heading="Enter Heading Text" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+
+
+        <Navbar title="Blog" aboutUs="About Blog" mode={mode} changeMode={changeMode} />
+        <Alert1 alertMsg={alert} />
+        
+        <Form1 />
+
     </>
   );
 }
